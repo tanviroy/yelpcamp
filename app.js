@@ -15,9 +15,9 @@ var campgroundSchema = new mongoose.Schema({
 
 var Campground = mongoose.model("Campground", campgroundSchema);
 /*Campground.create({
-    name: "Dew Point", 
+    name: "Nature's Home", 
     image: "https://www.photosforclass.com/download/px_1061640",
-    description: "An excellent place to camp, amidst nature. Close to a waterfall and forests host a wide variety of flora and fauna."
+    description: "An excellent place to camp amidst nature. Close to a waterfall and forests host a wide variety of flora and fauna."
 }, function(err,campground){
     if(err){
         console.log("ERROR!");
@@ -26,8 +26,7 @@ var Campground = mongoose.model("Campground", campgroundSchema);
         console.log("NEWLY CREATED CAMPGROUND:");
         console.log(campground);
     }
-});
-*/
+});*/
 
 app.get("/", function(req, res){
     res.render("landing");
